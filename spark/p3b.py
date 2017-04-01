@@ -5,5 +5,5 @@ school_list=school_data.map(lambda x: [x]).map(lambda x : list(csv.reader(x))[0]
 ponce_city = school_list.filter(lambda x: x[2] == 'Ponce')
 cabo_rojo_city = school_list.filter(lambda x: x[2] == 'Cabo Rojo')
 dorado_city = school_list.filter(lambda x: x[2] == 'Dorado')
-result1 = ponce_city.union(cabo_rojo_city).union(dorado_city)
-result2.foreach(print)
+result = ponce_city.union(cabo_rojo_city).union(dorado_city)
+result.foreach(print)
