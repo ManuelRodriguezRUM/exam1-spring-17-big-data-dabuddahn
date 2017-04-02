@@ -11,7 +11,7 @@ select region, ciudad, count(*)
     where e.id = s.id
     group by s.id;
 # PART 3 - All students that go to school in the city of Ponce or Cabo Rojo
-select e.ciudad, e.id, s.numeroserie
+select e.ciudad, e.id, s.numeroestudiante
     from studentsPR s, escuelasPR e
     where e.id=s.id AND (e.ciudad ="Ponce" OR e.ciudad="Cabo Rojo");
 # PART 4 - Students by region and city
